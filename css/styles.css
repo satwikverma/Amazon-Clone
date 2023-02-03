@@ -1,0 +1,55 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #0F1111;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    margin-right: 1rem;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+}
+
+main {
+    display: flex;
+    padding: 1rem;
+}
+
+section:first-child {
+    width: 75%;
+}
+
+section:last-child {
+    width: 25%;
+    text-align: center;
+}
+
+footer {
+    background-color: #222;
+}
+
+.top-imgs {
+    width: 100%;
+}
+
+.nav-logo {
+    width: 100%;
+}
