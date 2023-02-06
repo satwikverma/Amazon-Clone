@@ -1,0 +1,94 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+#navbar {
+    height: 99px;
+    background-color: #131921;
+}
+
+#navbar-upper {
+    height: 60px;
+}
+
+/* nav-upper ke nav-left ke divs */
+
+#navbar-upper .nav-left {
+    height: 60px;
+    width: 22.51%;
+    float: left;
+}
+
+#nav-logo {
+    margin-left: 11px;
+    padding-top: 4px;
+    height: 56px;
+    width: 41.87%;
+    float: left;
+}
+
+#nav-locator {
+    height: 60px;
+    width: 53.9%;
+    float: left;
+    margin-left: 2px;
+}
+
+/* nav-upper ke nav-fill ke divs */
+
+#navbar-upper .nav-fill {
+    height: 60px;
+    width: 48.145%;
+    float: left;
+}
+
+#nav-search {
+    margin-left: 10px;
+    margin-right: 10px;
+    padding: 10px 4px 10px 3px;
+    height: 60px;
+}
+
+/* nav-upper ke nav-right ke divs */
+
+#navbar-upper .nav-right {
+    height: 60px;
+    width: 28.1%;
+    float: left;
+}
+
+#nav-tools {
+    margin-top: 2px;
+    padding-top: 3px;
+    height: 58px;
+}
+
+/* navbar-lower ke divs */
+
+#navbar-lower {
+    padding-left: 11px;
+    height: 39px;
+    background-color: #232f3e;
+}
+
+#navbar-lower .nav-left {
+    height: 39px;
+    width: 4.312%;
+    float: left;
+}
+
+#navbar-lower .nav-fill {
+    height: 39px;
+    width: 63.586%;
+    float: left;
+}
+
+#navbar-lower .nav-right {
+    height: 39px;
+    width: 32.1%;
+    float: left;
+}
