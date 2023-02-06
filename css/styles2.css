@@ -6,6 +6,14 @@ body {
     margin: 0;
 }
 
+a {
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    font-family: 'PT Sans', sans-serif;
+    font-size: 14px;
+}
+
 #navbar {
     height: 99px;
     background-color: #131921;
@@ -57,7 +65,7 @@ body {
 
 #navbar-upper .nav-right {
     height: 60px;
-    width: 28.1%;
+    width: 29.34%;
     float: left;
 }
 
@@ -65,6 +73,35 @@ body {
     margin-top: 2px;
     padding-top: 3px;
     height: 58px;
+}
+
+#nav-tools-lang {
+    margin-left: 1px;
+    padding: 0 9px 5px;
+    height: 50px;
+    width: 18.31%;
+}
+
+#nav-tools-sign-in {
+    width: 32.82%;
+    height: 50px;
+    margin-left: 2px;
+    padding: 0 9px 10px;
+}
+
+#nav-tools-orders {
+    width: 19.2%;
+    height: 50px;
+    margin-left: 2px;
+    padding: 0 9px 10px;
+}
+
+#nav-tools-cart {
+    width: 20.96%;
+    height: 50px;
+    margin-left: 2px;
+    margin-right: 11px;
+    padding: 0 9px 10px;
 }
 
 /* navbar-lower ke divs */
@@ -75,16 +112,40 @@ body {
     background-color: #232f3e;
 }
 
+/* nav-lower ke nav-left ke divs */
+
 #navbar-lower .nav-left {
     height: 39px;
     width: 4.312%;
     float: left;
 }
 
+#nav-hamburger-menu {
+    height: 39px;
+    width: 100%;
+    padding: 8px 9px;
+}
+
+
+/* nav-lower ke nav-fill ke divs */
+
 #navbar-lower .nav-fill {
     height: 39px;
     width: 63.586%;
     float: left;
+}
+
+#nav-shop-container {
+    height: 39px;
+    width: 100%;
+}
+
+.nav-a {
+    height: 28px;
+    margin: 5px 0 6px 0;
+    padding: 8px 9px;
+    float: left;
+    line-height: 10px;
 }
 
 #navbar-lower .nav-right {
