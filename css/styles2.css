@@ -4,6 +4,7 @@
 
 body {
     margin: 0;
+    background-color: lightgrey;
 }
 
 a {
@@ -11,7 +12,7 @@ a {
     text-decoration: none;
     color: #fff;
     font-family: 'PT Sans', sans-serif;
-    font-size: 14px;
+    font-size: 15px;
 }
 
 #navbar {
@@ -21,6 +22,7 @@ a {
 
 #navbar-upper {
     height: 60px;
+    line-height: 2;
 }
 
 /* nav-upper ke nav-left ke divs */
@@ -54,11 +56,48 @@ a {
     float: left;
 }
 
+#nav-search-bar-form {
+    height: 40px;
+}
+
+#navbar-upper .nav-fill .nav-left {
+    width: 8.246%;
+    height: 40px;
+}
+
+#navbar-upper .nav-fill .nav-fill {
+    width: 84.62%;
+    height: 40px;
+}
+
+.nav-search-field {
+    height: 40px;
+}
+
+.nav-input {
+    border-style: none;
+    width: 100%;
+    height: 38px;
+    padding: 7px 10px 10px 0;
+    font-size: 15px;
+
+}
+
 #nav-search {
     margin-left: 10px;
     margin-right: 10px;
     padding: 10px 4px 10px 3px;
     height: 60px;
+}
+
+#navbar-upper .nav-fill .nav-right {
+    width: 7.136%;
+    height: 40px;
+}
+
+#nav-search-submit-button {
+    width: 100%;
+    height: 38px;
 }
 
 /* nav-upper ke nav-right ke divs */
@@ -145,11 +184,17 @@ a {
     margin: 5px 0 6px 0;
     padding: 8px 9px;
     float: left;
-    line-height: 10px;
+    line-height: 0.8;
 }
 
 #navbar-lower .nav-right {
     height: 39px;
     width: 32.1%;
     float: left;
+}
+
+#navbar-lower .nav-right img {
+    position: absolute;
+    right: 0px;
+    top: 60px;
 }
