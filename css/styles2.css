@@ -313,6 +313,12 @@ header a {
     max-width: -webkit-fill-available;
 }
 
+.first-inner-clearance {
+    max-width: -webkit-fill-available;
+    height: 250px;
+    margin-bottom: 30px;
+}
+
 .btn {
     -webkit-border-radius: 10;
     -moz-border-radius: 10;
