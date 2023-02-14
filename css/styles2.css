@@ -278,8 +278,7 @@ header a {
 
 /* Main body ki CSS */
 /* Main body ki CSS */
-/* Main body ki CSS */
-/* Main body ki CSS */
+/* For similar looking first two offers rows */
 
 .first {
     height: 400px;
@@ -311,6 +310,9 @@ header a {
 
 .first-inner-offer-img {
     max-width: -webkit-fill-available;
+    width: auto;
+    max-height: 200px;
+    max-width: 100%;
 }
 
 .first-inner-clearance {
@@ -349,3 +351,89 @@ header a {
     font-weight: bold;
     font-size: 20px;
 }
+
+/* Third row (Big Banner) */
+.big-banner {
+    text-align: center;
+}
+
+/* Fourth row (Today's Deals) */
+.second {
+    height: 400px;
+    margin: 20px 0 0;
+    padding: 20px;
+    padding-top: 10px;
+    background-color: #ffffff;
+}
+
+.second-inner {
+    display: block;
+    float: left;
+    height: 300px;
+    width: 237.8px;
+    /* background-color: #f9f8f8; */
+    margin-right: 20px;
+    padding: 10px;
+    max-height: 300px;
+    text-align: center;
+    position: relative;
+    border: 1px solid #eaeaea;
+}
+
+.second-inner-product-img {
+    width: auto;
+    max-height: 200px;
+    max-width: 100%;
+}
+
+.below-second-inner-product-img {
+    position: absolute;
+    bottom: 5px;
+    font-weight: bold;
+    font-size: 13px;
+    text-align: center;
+}
+
+.deal-scheme {
+    color: crimson;
+}
+
+.deal-scheme-btn {
+    color: #fff;
+    background-color: crimson;
+    padding: 0 5px;
+    border-radius: 5px;
+    font-weight: normal;
+}
+
+/* Before footer css for Sign in button */
+.bottom-sign-in {
+    background-color: #fff;
+    padding: 10px;
+    margin: 0 0;
+    font-size: 13px;
+    text-align: center;
+}
+
+.bottom-btn {
+    width: 8%;
+    margin: 0 auto;
+    -webkit-border-radius: 10;
+    -moz-border-radius: 10;
+    border-radius: 10px;
+    color: #000;
+    font-size: 13px;
+    font-weight: normal;
+    background: #ffd900;
+    padding: 10px 20px 10px 20px;
+    text-decoration: none;
+    text-align: center;
+    display: block;
+}
+
+hr {
+    border-style: none;
+    border-top: 0.5px solid #cdcdcd;
+}
+
+/* Bottom ki CSS (for footer) */
