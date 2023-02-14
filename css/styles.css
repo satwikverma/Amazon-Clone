@@ -381,9 +381,12 @@ header a {
 }
 
 .second-inner-product-img {
-    width: auto;
-    max-height: 200px;
-    max-width: 100%;
+    
+width: auto;
+    
+max-height: 200px;
+    
+max-width: 100%;
 }
 
 .below-second-inner-product-img {
@@ -437,3 +440,44 @@ hr {
 }
 
 /* Bottom ki CSS (for footer) */
+
+.foot-container {
+    background-color: #1d2631;
+}
+
+.back-to-top {
+    text-align: center;
+    padding: 15px 0;
+    background-color: #304052;
+}
+
+.back-to-top:hover {
+    background-color: #4c5a6b;
+}
+
+.foot-container a {
+    font-size: 14px;
+    text-decoration: none;
+    color: #fff;
+}
+
+ul {
+    margin: 0;
+    margin-right: 100px;
+    padding: 0;
+    list-style: none;
+    float: left;
+}
+
+li:hover {
+    text-decoration: underline;
+}
+
+.company-rel-links {
+    display: table;
+    margin: 0 auto;
+    padding-bottom: 30px;
+    color: #fff;
+    font-size: 14px;
+    line-height: 30px;
+}
