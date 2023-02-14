@@ -3,49 +3,300 @@
 <head>
     <meta charset="UTF-8">
     <title>Online Shopping site in India: Shop Online for Mobiles, Books, Watches, Shoes and More - Amazon.in</title>
-    <link rel="stylesheet" href="css/styles.css">
-    <link rel="icon" href="amazon.ico">
 
-    <!-- Font Links -->
+    <!-- favicon -->
+    <link rel="icon" href="amazon.ico">
+    <!-- normalize css -->
+    <link rel="stylesheet" src="//normalize-css.googlecode.com/svn/trunk/normalize.css" />
+    <!-- style css -->
+    <link rel="stylesheet" href="css/styles.css">
+    <!-- fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=PT+Sans&display=swap" rel="stylesheet">
-
-    <!-- Normalize -->
-    <link rel="stylesheet" src="//normalize-css.googlecode.com/svn/trunk/normalize.css" />
-
 </head>
 <body>
     <header>
-        <div id="nav-upper">
-            <ul>
-                <li id="nav-logo"><a href="#">Logo</a></li>
-                <li><a href="#">Address</a></li>
-                <li><a href="#">Search Bar</a></li>
-                <li><a href="#">Language</a></li>
-                <li><a href="#">Sign In</a></li>
-                <li><a href="#">Returns & Orders</a></li>
-                <li><a href="#">Cart</a></li>
-            </ul>
-        </div>
-    
-        <div id="nav-lower">
-            <ul>
-                <li><a href="#"><strong>All</strong></a></li>
-                <li><a href="https://www.amazon.in/minitv?ref_=nav_avod_desktop_topnav" target="_blank">Amazon miniTV</a></li>
-                <li><a href="https://www.amazon.in/gp/bestsellers/?ref_=nav_cs_bestsellers" target="_blank">Best Sellers</a></li>
-                <li><a href="https://www.amazon.in/mobile-phones/b/?ie=UTF8&node=1389401031&ref_=nav_cs_mobiles" target="_blank">Mobiles</a></li>
-                <li><a href="https://www.amazon.in/gp/help/customer/display.html?nodeId=200507590&ref_=nav_cs_help" target="_blank">Customer Service</a></li>
-                <li><a href="https://www.amazon.in/deals?ref_=nav_cs_gb" target="_blank">Today's Deals</a></li>
-                <li><a><img src="images/nav-icons/lower_nav_rightmost_img.jpg" alt=""></a></li>
-            </ul>
+        <div id="navbar">
+            <div id="navbar-upper">
+                <div class="nav-left">
+                    <div id="nav-logo">
+                        <a href="https://www.amazon.in/ref=nav_logo">
+                            <span class="nav-logo-link-left"></span>
+                            <span class="nav-logo-link-right">.in</span>
+                        </a>
+                    </div>
+                    <div id="nav-locator">
+                        <span class="nav-locator-left"></span>
+                        <span class="nav-locator-right">
+                            <span class="upper-line">Hello</span>
+                            <span class="lower-line">Select your address</span>
+                        </span>
+                    </div>
+                </div>
+                <div class="nav-fill">
+                    <div id="nav-search">
+                        <form id="nav-search-bar-form" action="" method="get">
+                            <div class="nav-left"><span style="font-size: 12px; position: relative; left: 16px; font-family:'PT Sans', sans-serif;">All</span></div>
+                            <div class="nav-fill">
+                                <div class="nav-search-field">
+                                    <label for="amazon-search-help-text" style="display: none;">Search Amazon.in</label>
+                                    <input type="text" placeholder="&nbsp;&nbsp; Search Amazon.in" class="nav-input">
+                                </div>
+                            </div>
+                            <div class="nav-right">
+                                <div class="nav-search-submit">
+                                    <input id="nav-search-submit-button" type="submit" value="">
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="nav-right">
+                    <div id="nav-tools">
+                        <a id="nav-tools-lang" href="https://www.amazon.in/customer-preferences/edit?ie=UTF8&preferencesReturnUrl=%2F%3Fref_%3Dicp_country_from_us&ref_=topnav_lang"></a>
+                        <a id="nav-tools-sign-in" href="https://www.amazon.in/ap/signin?openid.pape.max_auth_age=0&openid.return_to=https%3A%2F%2Fwww.amazon.in%2F%3Fref_%3Dnav_ya_signin&openid.identity=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.assoc_handle=inflex&openid.mode=checkid_setup&openid.claimed_id=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.ns=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0&"></a>
+                        <a id="nav-tools-orders" href="https://www.amazon.in/gp/css/order-history?ref_=nav_orders_first"></a>
+                        <a id="nav-tools-cart" href="https://www.amazon.in/gp/cart/view.html?ref_=nav_cart"></a>
+                    </div>
+                </div>
+            </div>
+            <div id="navbar-lower">
+                <div class="nav-left">
+                    <a id="nav-hamburger-menu" href="#">All</a>
+                </div>
+                <div class="nav-fill">
+                    <div id="nav-shop-container">
+                        <a class="nav-a" href="https://www.amazon.in/minitv?ref_=nav_avod_desktop_topnav">Amazon miniTV</a>
+                        <a class="nav-a" href="https://www.amazon.in/gp/bestsellers/?ref_=nav_cs_bestsellers">Best Sellers</a>
+                        <a class="nav-a" href="https://www.amazon.in/mobile-phones/b/?ie=UTF8&node=1389401031&ref_=nav_cs_mobiles">Mobiles</a>
+                        <a class="nav-a" href="https://www.amazon.in/gp/help/customer/display.html?nodeId=200507590&ref_=nav_cs_help">Customer Service</a>
+                        <a class="nav-a" href="https://www.amazon.in/deals?ref_=nav_cs_gb">Today's Deals</a>
+                        <a class="nav-a" href="https://www.amazon.in/electronics/b/?ie=UTF8&node=976419031&ref_=nav_cs_electronics">Electronics</a>
+                        <a class="nav-a" href="https://www.amazon.in/gp/sva/dashboard?ref_=nav_cs_apay">Amazon Pay</a>
+                        <a class="nav-a" href="https://www.amazon.in/prime?ref_=nav_cs_primelink_nonmember">Prime</a>
+                        <a class="nav-a" href="https://www.amazon.in/gp/browse.html?node=6648217031&ref_=nav_cs_fashion">Fashion</a>
+                    </div>
+                </div>
+                <div class="nav-right">
+                    <a href="https://www.amazon.in/minitv/tp/97a9fc97-4ad4-4b11-b237-f0fd3ba96cc3/?_encoding=UTF8&dplnk=Y&mtv_pt=gateway&refMarker=avod_in_swm_RaftaRafta&ref_=nav_swm_avod_in_swm_RaftaRafta&pf_rd_p=52c01ace-c097-4605-92d5-2247af84c05f&pf_rd_s=nav-sitewide-msg&pf_rd_t=4201&pf_rd_i=navbar-4201&pf_rd_m=A21TJRUUN4KGV&pf_rd_r=TSXVH3CQN2GFJJ0S553Z"><img src="images/nav-icons/SWM_RaftaRafta._CB616355379_.jpg" alt=""></a>
+                </div>
+            </div>
         </div>
     </header>
 
+    <!-- End of header -->
+
     <main>
-        <div>
-            <img id="body-top-img" src="images/body-top/body-top-img-1.jpg" alt="1st deal">
+        <section>
+            <img src="images/body-top/body-top-img-1.jpg" alt="" style="width: 100%">
+        </section>
+
+        <!-- Pehli Row -->
+        <div class="first">
+            <div class="first-inner">
+                <span>Book in advance for holi</span>
+                <div class="first-inner-offer">
+                    <img src="images/offers/Flight_186x116._SY116_CB618818544_.jpg" alt="" class="first-inner-offer-img">
+                    <span>Get up to Rs.2000 off on flights</span>
+                </div>
+                <div class="first-inner-offer">
+                    <img src="images/offers/Train_186x116._SY116_CB618818544_.jpg" alt="" class="first-inner-offer-img">
+                    <span>Zero payment gateway charges</span>
+                </div>
+                <div class="first-inner-offer">
+                    <img src="images/offers/Bus_186x116._SY116_CB618818544_.jpg" alt="" class="first-inner-offer-img">
+                    <span>Guaranteed rewards on bus tickets</span>
+                </div>
+                <div class="first-inner-offer">
+                    <img src="images/offers/Accessory_186x116._SY116_CB618818544_.jpg" alt="" class="first-inner-offer-img">
+                    <span>Products for your travel needs</span>
+                </div>
+                <a class="links-below-offers" href="https://www.amazon.in/gp/sva/dashboard?ref_=gw_apay_travel_qcpc&pf_rd_r=7B7SK2H08CZ99VYDD1XF&pf_rd_p=3e1f908d-5083-42ac-9992-559dd38adad0&pd_rd_r=7f7c9950-3115-4ccf-a249-326cf7f9558c&pd_rd_w=3bBiA&pd_rd_wg=8WAgD">See all offers</a>
+            </div>
+            <div class="first-inner">
+                <span>Up to 70% off | Clearance Store</span>
+                <div style="padding-top: 10px;">
+                    <img src="images/offers/Clearance_store_Desktop_CC_1x._SY304_CB628315133_.jpg" alt="" class="first-inner-clearance">
+                    <a class="links-below-offers" href="https://www.amazon.in/b?ie=UTF8&node=1380263031&ref=ATFQC_seeall&pf_rd_r=7B7SK2H08CZ99VYDD1XF&pf_rd_p=dcc93017-189e-4b38-a657-ad758c7db8c4&pd_rd_r=7f7c9950-3115-4ccf-a249-326cf7f9558c&pd_rd_w=Y8WOP&pd_rd_wg=8WAgD&ref_=pd_gw_unk">See more</a>
+                </div>
+            </div>
+            <div class="first-inner">
+                <span>Home Appliances | Up to 10% off on select cards</span>
+                <div class="first-inner-offer">
+                    <img src="images/offers/Appliances-QC-PC-186x116--B07G5J5FYP._SY116_CB667322346_.jpg" alt="" class="first-inner-offer-img">
+                    <span>Microwave</span>
+                </div>
+                <div class="first-inner-offer">
+                    <img src="images/offers/Appliances-QC-PC-186x116--B08345R1ZW._SY116_CB667322346_.jpg" alt="" class="first-inner-offer-img">
+                    <span>Refrigerator</span>
+                </div>
+                <div class="first-inner-offer">
+                    <img src="images/offers/Appliances-QC-PC-186x116--B08RDL6H79._SY116_CB667322346_.jpg" alt="" class="first-inner-offer-img">
+                    <span>Air Conditioner</span>
+                </div>
+                <div class="first-inner-offer">
+                    <img src="images/offers/186x116---wm._SY116_CB667322346_.jpg" alt="" class="first-inner-offer-img">
+                    <span>Washing Machine</span>
+                </div>
+                <a class="links-below-offers" href="https://www.amazon.in/b?ie=UTF8&node=1380263031&ref=ATFQC_seeall&pf_rd_r=7B7SK2H08CZ99VYDD1XF&pf_rd_p=dcc93017-189e-4b38-a657-ad758c7db8c4&pd_rd_r=7f7c9950-3115-4ccf-a249-326cf7f9558c&pd_rd_w=Y8WOP&pd_rd_wg=8WAgD&ref_=pd_gw_unk">See more</a>
+            </div>
+            <div>
+                <div class="first-inner-part" style="margin-right: 0; height: 140px;">
+                    <span>Sign in for your best experience</span>
+                    <a href="" class="btn" style="position: relative; top: 10px;">Sign in securely</a>
+                </div>
+                <div class="first-inner-part" style="margin-right: 0; margin-top: 10px; padding: 0;">
+                    <img src="images/offers/Laptops-Sept2019._CB436595915_.jpg" alt="" style="width: 100%; height: 100%;">
+                </div>
+            </div>
+        </div>
+
+        <!-- Dusri Row -->
+
+        <div class="first">
+            <div class="first-inner">
+                <span>Up to 60% off | Professional tools, testing &amp; more</span>
+                <div class="first-inner-offer">
+                    <img src="images/offers/second-row/Tools1x._SY116_CB424026090_.jpg" alt="" class="first-inner-offer-img">
+                    <span>Professional tools</span>
+                </div>
+                <div class="first-inner-offer">
+                    <img src="images/offers/second-row/2._SY116_CB643952439_.jpg" alt="" class="first-inner-offer-img">
+                    <span>Measuring instruments</span>
+                </div>
+                <div class="first-inner-offer">
+                    <img src="images/offers/second-row/1._SY116_CB643952439_.jpg" alt="" class="first-inner-offer-img">
+                    <span>Cleaning supplies</span>
+                </div>
+                <div class="first-inner-offer">
+                    <img src="images/offers/second-row/med1x._SY116_CB424026091_.jpg" alt="" class="first-inner-offer-img">
+                    <span>Medical supplies</span>
+                </div>
+                <a class="links-below-offers" href="https://www.amazon.in/gp/sva/dashboard?ref_=gw_apay_travel_qcpc&pf_rd_r=7B7SK2H08CZ99VYDD1XF&pf_rd_p=3e1f908d-5083-42ac-9992-559dd38adad0&pd_rd_r=7f7c9950-3115-4ccf-a249-326cf7f9558c&pd_rd_w=3bBiA&pd_rd_wg=8WAgD">See all offers</a>
+            </div>
+            <div class="first-inner">
+                <span>Revamp your home in style</span>
+                <div class="first-inner-offer">
+                    <img src="images/offers/second-row/372x232_1_Low._SY116_CB670263840_.jpg" alt="" class="first-inner-offer-img">
+                    <span>Bedsheets, curtains & more</span>
+                </div>
+                <div class="first-inner-offer">
+                    <img src="images/offers/second-row/372x232_2_Low._SY116_CB670263840_.jpg" alt="" class="first-inner-offer-img">
+                    <span>Home Decoration</span>
+                </div>
+                <div class="first-inner-offer">
+                    <img src="images/offers/second-row/372x232_3_Low._SY116_CB670263840_.jpg" alt="" class="first-inner-offer-img">
+                    <span>Home Storage</span>
+                </div>
+                <div class="first-inner-offer">
+                    <img src="images/offers/second-row/372x232_4_Low._SY116_CB670263840_.jpg" alt="" class="first-inner-offer-img">
+                    <span>Lightning Solution</span>
+                </div>
+                <a class="links-below-offers" href="https://www.amazon.in/b?ie=UTF8&node=1380263031&ref=ATFQC_seeall&pf_rd_r=7B7SK2H08CZ99VYDD1XF&pf_rd_p=dcc93017-189e-4b38-a657-ad758c7db8c4&pd_rd_r=7f7c9950-3115-4ccf-a249-326cf7f9558c&pd_rd_w=Y8WOP&pd_rd_wg=8WAgD&ref_=pd_gw_unk">See more</a>
+            </div>
+            <div class="first-inner">
+                <span>Automotive essentials | Up to 60% off</span>
+                <div class="first-inner-offer">
+                    <img src="images/offers/second-row/Glasscare1X._SY116_CB410830553_.jpg" alt="" class="first-inner-offer-img">
+                    <span>Cleaning accessories</span>
+                </div>
+                <div class="first-inner-offer">
+                    <img src="images/offers/second-row/Rim_tyrecare1x._SY116_CB410830552_.jpg" alt="" class="first-inner-offer-img">
+                    <span>Tyre and rim care</span>
+                </div>
+                <div class="first-inner-offer">
+                    <img src="images/offers/second-row/Vega_helmet_186x116._SY116_CB405090404_.jpg" alt="" class="first-inner-offer-img">
+                    <span>Helmets</span>
+                </div>
+                <div class="first-inner-offer">
+                    <img src="images/offers/second-row/Vaccum1x._SY116_CB410830552_.jpg" alt="" class="first-inner-offer-img">
+                    <span>Vacuum Cleaner</span>
+                </div>
+                <a class="links-below-offers" href="https://www.amazon.in/b?ie=UTF8&node=1380263031&ref=ATFQC_seeall&pf_rd_r=7B7SK2H08CZ99VYDD1XF&pf_rd_p=dcc93017-189e-4b38-a657-ad758c7db8c4&pd_rd_r=7f7c9950-3115-4ccf-a249-326cf7f9558c&pd_rd_w=Y8WOP&pd_rd_wg=8WAgD&ref_=pd_gw_unk">See more</a>
+            </div>
+            <div class="first-inner" style="margin-right: 0;">
+                <span>Upgrade your home | Amazon Brands & more</span>
+                <div class="first-inner-offer">
+                    <img src="images/offers/second-row/Mixer-186x116._SY116_CB614658577_.jpg" alt="" class="first-inner-offer-img">
+                    <span>Up to 50% off | Home appliances</span>
+                </div>
+                <div class="first-inner-offer">
+                    <img src="images/offers/second-row/Comforter-186x116._SY116_CB614658577_.jpg" alt="" class="first-inner-offer-img">
+                    <span>Up to 50% off | Comforters & more</span>
+                </div>
+                <div class="first-inner-offer">
+                    <img src="images/offers/second-row/Conatiner-186x116._SY116_CB614658577_.jpg" alt="" class="first-inner-offer-img">
+                    <span>Starting Rs.169 | Containers & more </span>
+                </div>
+                <div class="first-inner-offer">
+                    <img src="images/offers/second-row/Photoframe-186x116._SY116_CB614658577_.jpg" alt="" class="first-inner-offer-img">
+                    <span>Photo frames, Clocks & more</span>
+                </div>
+                <a class="links-below-offers" href="https://www.amazon.in/b?ie=UTF8&node=1380263031&ref=ATFQC_seeall&pf_rd_r=7B7SK2H08CZ99VYDD1XF&pf_rd_p=dcc93017-189e-4b38-a657-ad758c7db8c4&pd_rd_r=7f7c9950-3115-4ccf-a249-326cf7f9558c&pd_rd_w=Y8WOP&pd_rd_wg=8WAgD&ref_=pd_gw_unk">See more</a>
+            </div>
+        </div>
+
+        <!-- Teesri Row (Big Banner) -->
+        <div class="big-banner">
+            <img src="images/body-top/970X250-_desktop_banner.jpg" alt="">
+        </div>
+
+        <!-- Fourth row (Today's Deals)  -->
+        <div class="second">
+            <h2>Today's Deals</h2>
+            <div class="second-inner">
+                <img class="second-inner-product-img" src="images/products/Accessory_186x116._SY116_CB618818544_.jpg" alt="">
+                <div class="below-second-inner-product-img">
+                    <p class="deal-scheme"><span class="deal-scheme-btn">Up to 48% off</span> Deal of the day</p>
+                    <span>Top lenovo tablet for your Studies</span>
+                </div>
+            </div>
+            <div class="second-inner">
+                <img class="second-inner-product-img" src="images/products/31G1NouVxaL._AC_SY200_.jpg" alt="">
+                <div class="below-second-inner-product-img">
+                    <p class="deal-scheme"><span class="deal-scheme-btn">Up to 78% off</span> Deal of the day</p>
+                    <span>Today's offer on headsets</span>
+                </div>
+            </div>
+            <div class="second-inner">
+                <img class="second-inner-product-img" src="images/products/31hMLPI4p9L._AC_SY200_.jpg" alt="">
+                <div class="below-second-inner-product-img">
+                    <p class="deal-scheme"><span class="deal-scheme-btn">Up to 77% off</span> Deal of the day</p>
+                    <span>Newly launched X10 TWS from Boult</span>
+                </div>
+            </div>
+            <div class="second-inner">
+                <img class="second-inner-product-img" src="images/products/31XFxTn1DCL._AC_SY200_.jpg" alt="">
+                <div class="below-second-inner-product-img">
+                    <p class="deal-scheme"><span class="deal-scheme-btn">Up to 80% off</span> Deal of the day</p>
+                    <span>Top deals on computer accessories</span>
+                </div>
+            </div>
+            <div class="second-inner" style="margin-right: 0;">
+                <img class="second-inner-product-img" src="images/products/41cC9gNr47L._AC_SY200_.jpg" alt="">
+                <div class="below-second-inner-product-img">
+                    <p class="deal-scheme"><span class="deal-scheme-btn">Up to 27% off</span> Deal of the day</p>
+                    <span>Lava Blaze 5G available at Rs.10,999</span>
+                </div>
+            </div>
         </div>
     </main>
+
+    <!-- End of main -->
+
+    <!--Sign in button-->
+    <div class="bottom-sign-in">
+        <hr>
+        <p>See personalized recommendations</p>
+        <a href="#" class="bottom-btn">Sign in</a>
+        <p>New customer ? <a href="#" class="links-below-offers" >Start Here</a></p>
+        <hr>
+    </div>
+
+    <footer>
+
+    </footer>
+    <!-- End of footer -->
 </body>
 </html>
