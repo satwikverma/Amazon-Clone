@@ -28,6 +28,8 @@ header a {
     font-size: 13px;
     display: block;
     font-weight: 600;
+    position: absolute;
+    bottom: 10px;
 }
 
 .links-below-offers:hover{
@@ -221,6 +223,8 @@ header a {
     margin-left: 2px;
     margin-right: 11px;
     padding: 0 9px 10px;
+    background-image: url(../images/nav-icons/nav-sprite-global-1x-hm-dsk-reorg._CB405936311_.png);
+    background-position: -1024px -1229px;
 }
 
 /* navbar-lower ke divs */
@@ -288,28 +292,31 @@ header a {
 
 .first {
     height: 400px;
-    margin: 20px;
+    margin: 0 20px 20px;
 }
 
 .first-inner {
     display: block;
     height: 400px;
-    width: 23.6%;
+    width: calc((100% - 70px)/4);
     background-color: #fff;
     margin-right: 20px;
     float: left;
     padding: 20px;
     font-weight: bold;
     font-size: 20px;
+    position: relative;
 }
 
+
 .first-inner-offer {
-    width: 124px;
-    height: 137px;
+    width: 50%;
+    height: auto;
     font-size: 13px;
     font-weight: normal;
-    margin-top: 10px;
-    margin-right: 10px;
+    /* margin-top: 10px; */
+    /* margin-right: 10px; */
+    padding: 10px;
     display: block;
     float: left;
 }
@@ -322,9 +329,17 @@ header a {
 }
 
 .first-inner-clearance {
-    max-width: -webkit-fill-available;
-    height: 250px;
-    margin-bottom: 30px;
+    /* max-width: -webkit-fill-available; */
+    width: 100%;
+    height: auto;
+    /* margin-bottom: 30px; */
+}
+
+.first-inner-span {
+    display: block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
 }
 
 .btn {
@@ -339,6 +354,7 @@ header a {
     text-decoration: none;
     text-align: center;
     display: block;
+    width: 50%;
   }
   
 .btn:hover {
@@ -349,13 +365,18 @@ header a {
 .first-inner-part {
     display: block;
     height: 250px;
-    width: 23.6%;
+    width: 100%;
     background-color: #fff;
     margin-right: 20px;
     float: left;
     padding: 20px;
     font-weight: bold;
     font-size: 20px;
+}
+
+.first-inner-rightmost {
+    width: calc((100% - 70px)/4);
+    float: left;
 }
 
 /* Third row (Big Banner) */
@@ -366,7 +387,7 @@ header a {
 /* Fourth row (Today's Deals) */
 .second {
     height: 400px;
-    margin: 20px 0 0;
+    /* margin: 20px 0 0; */
     padding: 20px;
     padding-top: 10px;
     background-color: #ffffff;
@@ -376,7 +397,7 @@ header a {
     display: block;
     float: left;
     height: 300px;
-    width: 237.8px;
+    width: calc((100% - 80px)/5);
     /* background-color: #f9f8f8; */
     margin-right: 20px;
     padding: 10px;
