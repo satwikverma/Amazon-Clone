@@ -8,6 +8,12 @@ body {
     background-color: lightgrey;
 }
 
+.section {
+    position: relative;
+    z-index: -1;
+    height: 300px;
+}
+
 header a {
     display: inline-block;
     text-decoration: none;
@@ -61,7 +67,7 @@ header a {
 }
 
 .nav-logo-link-left {
-    background-image: url(file:///E:/Projects/Web%20Development/Amazon/images/nav-icons/nav-sprite-global-1x-hm-dsk-reorg._CB405936311_.png);
+    background-image: url(../images/nav-icons/nav-sprite-global-1x-hm-dsk-reorg._CB405936311_.png);
     background-position: -1059px -940px;
     width: 78%;
     height: 50px;
@@ -86,7 +92,7 @@ header a {
     display: inline-block;
     height: 56px;
     width: 20%;
-    background-image: url(file:///E:/Projects/Web%20Development/Amazon/images/nav-icons/nav-sprite-global-1x-hm-dsk-reorg._CB405936311_.png);
+    background-image: url(../images/nav-icons/nav-sprite-global-1x-hm-dsk-reorg._CB405936311_.png);
     background-position: -1108px -1711px;
 }
 
@@ -169,7 +175,7 @@ header a {
     height: 38px;
     background-color: #ffc754;
     border: 0;
-    background-image: url("file:///E:/Projects/Web%20Development/Amazon/images/nav-icons/nav-sprite-global-1x-hm-dsk-reorg._CB405936311_.png");
+    background-image: url(../images/nav-icons/nav-sprite-global-1x-hm-dsk-reorg._CB405936311_.png);
     background-position: -2100px -732px;
     border-radius: 0 2px 2px 0px;
 }
@@ -231,7 +237,7 @@ header a {
     height: 39px;
     width: 4.312%;
     float: left;
-    background-image: url("file:///E:/Projects/Web%20Development/Amazon/images/nav-icons/nav-sprite-global-1x-hm-dsk-reorg._CB405936311_.png");
+    background-image: url(../images/nav-icons/nav-sprite-global-1x-hm-dsk-reorg._CB405936311_.png);
     background-position: -1216px -1145px;
 }
 
@@ -434,9 +440,14 @@ max-width: 100%;
     display: block;
 }
 
-hr {
+.body-hr {
     border-style: none;
-    border-top: 0.5px solid #cdcdcd;
+    border-top: 1px solid #e5e5e5;
+}
+
+.foot-hr {
+    border-style: none;
+    border-top: 1px solid #505050;
 }
 
 /* Bottom ki CSS (for footer) */
@@ -461,7 +472,7 @@ hr {
     color: #fff;
 }
 
-ul {
+.company-rel-links ul {
     margin: 0;
     margin-right: 100px;
     padding: 0;
@@ -469,7 +480,7 @@ ul {
     float: left;
 }
 
-li:hover {
+.company-rel-links li:hover {
     text-decoration: underline;
 }
 
@@ -480,4 +491,106 @@ li:hover {
     color: #fff;
     font-size: 14px;
     line-height: 30px;
+}
+
+.logo-and-lang {
+    padding: 20px 0;
+    width: 230px;
+    margin: 0 auto;
+    position: relative;
+}
+
+#logo {
+    display: inline-block;
+    width: 100px;
+    height: 30px;
+}
+
+.logo-and-lang a {
+    background-image: url(../images/nav-icons/nav-sprite-global-1x-hm-dsk-reorg._CB405936311_.png);
+    background-position: -1047px -987px;
+    padding: 0 10px;
+    HEIGHT: 100%;
+    display: block;
+}
+
+#lang {
+    display: inline-block;
+    width: 90px;
+    color: #CCC;
+    font-size: 13px;
+    border: 1px solid #DDD;
+    padding: 5px;
+    border-radius: 2px;
+    margin-left: 40px;
+    position: absolute;
+}
+
+#globe-icon {
+    width: 15px;
+    height: 20px;
+    background-image: url(../images/nav-icons/flags.png);
+    background-position: -1047px -934px;
+    float: left;
+}
+
+#lang-name {
+    float: left;
+    margin-left: 10px;
+}
+
+.countries {
+    text-align: center;
+    color: #DDD;
+    font-size: 12px;
+    padding: 0 0 20px 0;
+}
+
+.countries ul {
+    list-style: none;
+    padding: 0;
+    max-width: 845px;
+    margin: 0 auto;
+    line-height: 20px;
+}
+
+.countries li,
+.copyright li {
+    display: inline;
+    margin-right: 10px;
+}
+
+.services {
+    background-color: #131921;
+    padding: 20px 40px 0;
+    color: #DDD;
+    font-size: 12px;
+    text-align: center;
+}
+
+.services table {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.services td {
+    padding: 0 0.75em;
+    line-height: 115%;
+    vertical-align: top;
+    text-align: left;
+}
+
+.copyright {
+    background-color: #131921;
+    font-size: 13px;
+    color: #DDD;
+    text-align: center;
+    line-height: 20px;
+    padding: 40px 0;
+}
+
+.copyright ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
 }
