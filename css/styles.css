@@ -292,7 +292,7 @@ header a {
 
 .first {
     height: 400px;
-    margin: 0 20px 20px;
+    margin: 0 20px 10px;
 }
 
 .first-inner {
@@ -387,7 +387,7 @@ header a {
 /* Fourth row (Today's Deals) */
 .second {
     height: 400px;
-    /* margin: 20px 0 0; */
+    margin: 10px 0 0;
     padding: 20px;
     padding-top: 10px;
     background-color: #ffffff;
@@ -408,12 +408,9 @@ header a {
 }
 
 .second-inner-product-img {
-    
-width: auto;
-    
-max-height: 200px;
-    
-max-width: 100%;
+    width: auto;
+    max-height: 170px;
+    max-width: 100%;
 }
 
 .below-second-inner-product-img {
