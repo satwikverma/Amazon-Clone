@@ -63,10 +63,9 @@ body {
 /* css on main body elements *//* css on main body elements *//* css on main body elements *//* css on main body elements *//* css on main body elements */
 
 .first-section {
-    /* background-color: khaki; */
-    height: 500px;
+    height: 550px;
     margin-top: 10px;
-    min-width: 900px;
+    min-width: 1060px;
     overflow-x: hidden;
 }
 
@@ -87,7 +86,13 @@ body {
     margin: 0 10px;
     height: 100%;
     width: calc(0.45 * (100% - 20px));
+    overflow-y: scroll;
+    overflow-x: hidden;
 }
+
+.prod-info::-webkit-scrollbar {
+    display: none;
+  }
 
 .prod-buy {
     float: left;
@@ -251,8 +256,9 @@ body {
 }
 
 .offers-row {
-    height: 30px;
-    padding: 3px 0;
+    border-top: 1px solid #DDD;
+    height: 40px;
+    padding: 8px 0;
     line-height: 23px;
 }
 
@@ -278,3 +284,55 @@ body {
         font-weight: bold;
         font-size: 15px;
     }
+
+.offer-names-row {
+    height: 130px;
+    padding: 15px 0;
+    border-bottom: 1px solid #DDD;
+}
+
+    .offer-names-block {
+        height: 100px;
+        width: 150px;
+        float: left;
+        margin: 0 0 0 3px;
+        padding: 5px;
+        box-shadow: 0 0 1px 1px rgb(205 205 205 / 50%);
+        border-radius: 5px;
+        border: 1px solid #d1d1d1;
+    }
+
+    .offer-name-heading {
+        margin: 0;
+        font-size: 13px;
+        font-weight: bold;
+    }
+
+    .offer-desc {
+        margin: 2px 0 0 0;
+    }
+
+    .offer-link {
+        text-decoration: none;
+        color: #199e9e; 
+        font-size: 13px;
+    }
+
+    .offer-link:hover {
+        text-decoration: underline;
+        color: #c28310;
+    }
+
+.left {
+    float: left;
+    list-style: none;
+    padding: 0;
+    font-weight: bold;
+    line-height: 20px;
+}
+
+.right {
+    float: left;
+    list-style: none;
+    line-height: 20px;
+}
