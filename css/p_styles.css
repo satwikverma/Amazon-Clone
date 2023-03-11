@@ -285,13 +285,14 @@ body {
     }
 
 .offer-names-row {
-    height: 130px;
+    height: 146px;
     padding: 15px 0;
     border-bottom: 1px solid #DDD;
+    line-height: 20px;
 }
 
     .offer-names-block {
-        height: 100px;
+        height: 110px;
         width: 150px;
         float: left;
         margin: 0 0 0 3px;
@@ -379,6 +380,11 @@ body {
         color: darkcyan;
     }
 
+    .with-exchange a:hover {
+        text-decoration: underline;
+        color: rgb(226, 148, 2);
+    }
+
     .without-exchange {
         background-color: #e8e8e8;
         height: 40%;
@@ -421,3 +427,405 @@ body {
     .mrp-no-exchange {
         text-decoration: line-through;
     }
+
+.wishlist-button {
+    margin: 10px 0 10px 10px;
+    padding-left: 5px;
+    height: 30px;
+    line-height: 30px;
+    border: 1px solid #a0a0a0;
+    border-radius: 4px;
+    box-shadow: 0 0 3px 2px rgb(216 212 208 / 50%);
+}
+
+.wishlist-button:hover {
+    background-color: aliceblue;
+}
+
+/* Baad ka hissa */
+.product-specs{
+  float: left;
+  width: 100%;
+}
+
+.product-table{
+  width: 100%;
+  margin-top: 20px;
+  border-top: 1px solid #d5d9d9;
+  padding-top: 20px;
+  border-collapse: collapse;
+}
+
+.product-table th,td{
+  width: 20%;
+}
+
+/*ROW ONE*/
+
+.row-one img{
+  width: auto;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.empty{
+  padding: 14px;
+}
+
+.row-one th{
+  padding: 14px;
+  padding-bottom: 0px;
+  font-size: 14px!important;
+  text-align: left;
+  font-weight: normal;
+  line-height: 20px!important;
+  font-weight: 400px;
+}
+ 
+.row-one .name{
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.row-one .span{
+  font-weight: bold;
+}
+
+.row-one th a{
+  text-decoration: none;
+  color: #007185;
+}
+
+/*ROW TWO*/
+
+.row-two td{
+  color: #B12704!important;
+  font-size: 24px!important;
+  line-height: 32px!important;
+  font-weight: 700!important;
+  padding: 3px 14px;
+}
+
+/*ROW THREE*/
+
+.row-three td{
+  padding: 3px 14px;
+  font-size: 14px!important;
+  line-height: 20px;
+}
+
+.row-three div{
+  float: left;
+  padding-right: 3px;
+}
+
+.row-three a{
+  text-decoration: none;
+  color: #007185;
+}
+
+
+/*ROW FOUR*/
+
+.row-four td{
+  padding: 14px 30px;
+}
+
+.row-four button{
+  margin-bottom: 14px;
+  width: 100%!important;
+  background-color: #FFD814;
+  border: 1px solid #FCD200;
+  cursor: pointer;
+  padding: 1px 6px;
+  height: 30px;
+  border-radius: 7px;
+  box-shadow: 0 2px 5px 0 rgb(213 217 217 / 50%);
+}
+
+.row-four button:hover{
+  background: #F7CA00;
+  border-color: #F2C200;
+}
+ 
+/*ATTRIBUTE HEADINGS*/
+.attribute-heading{
+  padding: 14px;
+  background-color: #F8F8F8;
+  border-right: 5px solid #fff;
+  border-collapse: collapse;
+  border-top: 1px solid #d5d9d9;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  
+}
+
+/*BASE ITEM COLUMN*/
+.base-item-column{
+  padding: 14px;
+  background-color: #FCF9F8;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+/*ROW FIVE*/
+
+.row-five div{
+  float: left;
+}
+
+.row-five td{
+  border-top: 1px solid #d5d9d9;
+  padding: 14px;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.row-five .attribute-image{
+  float: left;
+  width: 9%;
+  margin-right: 5px;
+}
+
+.attribute-image img{
+  width: auto;
+  max-height: 100%;
+  max-width: 100%;
+}
+
+/*ROW SIX*/
+
+.row-six div{
+  float: left;
+}
+
+.row-six td{
+  border-top: 1px solid #d5d9d9;
+  padding: 14px;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.row-six .attribute-image{
+  float: left;
+  width: 9%;
+  margin-right: 5px;
+}
+
+.attribute-image img{
+  width: auto;
+  max-height: 100%;
+  max-width: 100%;
+}
+
+
+/*ROW SEVEN*/
+
+.row-seven div{
+  float: left;
+}
+
+.row-seven td{
+  border-top: 1px solid #d5d9d9;
+  padding: 14px;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.row-seven .attribute-image{
+  float: left;
+  width: 9%;
+  margin-right: 5px;
+}
+
+.attribute-image img{
+  width: auto;
+  max-height: 100%;
+  max-width: 100%;
+}
+
+/*ROW EIGHT*/
+
+.row-eight div{
+  text-align: left;
+}
+
+.row-eight td{
+  border-top: 1px solid #d5d9d9;
+  padding: 14px;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.attribute-heading .desc{
+  color: #565959!important;
+  font-size: 12px!important;
+  line-height: 16px!important;
+  text-align: left;
+}
+
+
+/*ROW NINE*/
+
+.row-nine div{
+  float: left;
+}
+
+.row-nine td{
+  border-top: 1px solid #d5d9d9;
+  padding: 14px;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.row-nine .attribute-image{
+  float: left;
+  width: 9%;
+  margin-right: 5px;
+}
+
+.attribute-image img{
+  width: auto;
+  max-height: 100%;
+  max-width: 100%;
+}
+
+/*ROW TEN*/
+
+.row-ten div{
+  float: left;
+}
+
+.row-ten td{
+  border-top: 1px solid #d5d9d9;
+  padding: 14px;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.row-ten .attribute-image{
+  float: left;
+  width: 9%;
+  margin-right: 5px;
+}
+
+.attribute-image img{
+  width: auto;
+  max-height: 100%;
+  max-width: 100%;
+}
+
+/*ROW ELEVEN*/
+
+.row-eleven td{
+  border-top: 1px solid #d5d9d9;
+  padding: 14px;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.row-eleven th{
+  text-align: left;
+}
+
+/*ROW TWELVE*/
+
+.row-twelve div{
+  float: left;
+}
+
+.row-twelve td{
+  border-top: 1px solid #d5d9d9;
+  padding: 14px;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.row-twelve .attribute-image{
+  float: left;
+  width: 9%;
+  margin-right: 5px;
+}
+
+.attribute-image img{
+  width: auto;
+  max-height: 100%;
+  max-width: 100%;
+}
+
+/*ROW THIRTEEN*/
+
+.row-thirteen div{
+  float: left;
+}
+
+.row-thirteen td{
+  border-top: 1px solid #d5d9d9;
+  padding: 14px;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.row-thirteen .attribute-image{
+  float: left;
+  width: 9%;
+  margin-right: 5px;
+}
+
+.attribute-image img{
+  width: auto;
+  max-height: 100%;
+  max-width: 100%;
+}
+
+/*ROW FOURTEEN*/
+
+.row-fourteen div{
+  text-align: left;
+}
+
+.row-fourteen td{
+  border-top: 1px solid #d5d9d9;
+  padding: 14px;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.attribute-heading .desc{
+  color: #565959!important;
+  font-size: 12px!important;
+  line-height: 16px!important;
+  text-align: left;
+}
+
+/*ROW FIFTEEN*/
+
+.row-fifteen th{
+  vertical-align: initial;
+  border-bottom: 1px solid #d5d9d9;
+}
+
+.row-fifteen div{
+  float: left;
+}
+
+.row-fifteen td{
+  border-top: 1px solid #d5d9d9;
+  padding: 14px;
+  font-size: 14px;
+  line-height: 20px;
+  border-bottom: 1px solid #d5d9d9;
+}
+
+.row-fifteen .attribute-image{
+  float: left;
+  width: 9%;
+  margin-right: 5px;
+}
+
+.attribute-image img{
+  width: auto;
+  max-height: 100%;
+  max-width: 100%;
+}
