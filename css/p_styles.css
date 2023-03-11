@@ -1,6 +1,6 @@
 * {
     box-sizing: border-box;
-    font-family: 'PT Sans', sans-serif;
+    font-family: sans-serif;
     font-size: 14px;
 }
 
@@ -98,7 +98,6 @@ body {
     float: left;
     height: 100%;
     width: calc(0.2 * (100% - 20px));
-    background-color: darkgreen;
 }
 
 /* css on main body's left part (prod-images ke inner elements pe) */
@@ -323,16 +322,102 @@ body {
         color: #c28310;
     }
 
-.left {
-    float: left;
-    list-style: none;
-    padding: 0;
-    font-weight: bold;
-    line-height: 20px;
+.product-specification {
+    height: 120px;
+    padding: 10px;
+    border-bottom: 1px solid #DDD;
 }
 
-.right {
-    float: left;
-    list-style: none;
-    line-height: 20px;
+    .left {
+        float: left;
+        list-style: none;
+        padding: 0;
+        font-weight: bold;
+        line-height: 20px;
+        margin: 0;
+    }
+
+    .right {
+        float: left;
+        list-style: none;
+        line-height: 20px;
+        margin: 0;
+    }
+
+.about-the-item {
+    padding: 0 10px 15px 10px;
+    border-bottom: 1px solid #DDD;
 }
+    
+    .about-heading {
+        font-size: 15px;
+        font-weight: bold;
+    }
+
+    .about-item-list {
+        padding: 0;
+        margin: 0 0 0 18px;
+    }
+
+/* css on main body -> section-1 -> right part */
+
+.exchange-box {
+    height: 210px;
+    padding: 0 0 10px 10px;
+    border-bottom: 1px solid #DDD;
+}
+
+    .with-exchange {
+        height: 60%;
+        border: 1px solid #DDD;
+        border-radius: 8px 8px 0 0;
+        padding: 10px 0 0 10px;
+    }
+
+    .with-exchange a {
+        text-decoration: none;
+        color: darkcyan;
+    }
+
+    .without-exchange {
+        background-color: #e8e8e8;
+        height: 40%;
+        border: 1px solid #DDD;
+        border-radius: 0 0 8px 8px;
+        padding: 10px 0 0 10px;
+    }
+
+    .exchange-heading {
+        font-weight: bold;
+        margin: 0 0 5px 0;
+    }
+
+    .exchange-discount {
+        font-weight: bold;
+        color: #cb0000;
+        margin: 0 0 14px 0;
+    }
+
+    .exchange-item {
+        height: 25px;
+        width: 180px;
+        line-height: 25px;
+        text-align: center;
+        border: 1px solid #cdcdcd;
+        border-radius: 4px;
+        box-shadow: 0 0 3px 2px rgb(216 212 208 / 50%);
+        margin-bottom: 10px;
+    }
+
+    .exchange-item:hover {
+        background-color: aliceblue;
+    }
+
+    .cp-no-exchange {
+        margin-right: 10px;
+        color: #cb0000;
+    }
+
+    .mrp-no-exchange {
+        text-decoration: line-through;
+    }
