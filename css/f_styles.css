@@ -1,0 +1,86 @@
+* {
+    box-sizing: border-box;
+    font-family: sans-serif;
+    border: none;
+}
+
+*:focus {outline: none;}
+
+.form-container {
+    width: 40%;
+    min-width: 500px;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+.new-address-loc {
+    font-size: 14px;
+    color: #868686;
+}
+
+.path:hover {
+    color: rgb(212, 134, 24);
+    text-decoration: underline;
+}
+
+.path-currentpage {
+    color: rgb(212, 134, 24);
+}
+
+.inside {
+    font-size: 10px;
+}
+
+/* css on form */
+.input-box-name {
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.input-box,
+.input-box-dropdown {
+    margin: 3px 0 15px 2px;
+    padding-left: 10px;
+    font-size: 14px;
+    width: 95%;
+    height: 33px;
+    border: 1px solid #a7a7a7;
+    border-radius: 4px;
+}
+
+.input-box-dropdown {
+    background-color: #f7f7f7;
+    font-size: 14px;
+    padding-left: 10px;
+    border: 1px solid #DDD;
+    border-radius: 8px;
+    box-shadow: 0 4px 4px #e6e6e6;
+}
+
+.input-box:focus,
+.input-box-dropdown:focus {
+    box-shadow: 0px 0px 2px 2px #8cf5e5;
+    background-color: #faffff;
+}
+
+.town,
+.state {
+    float: left;
+}
+
+.btn {
+    -webkit-border-radius: 8;
+    -moz-border-radius: 8;
+    border-radius: 8px;
+    font-family: Arial;
+    color: #383838;
+    font-size: 14px;
+    background: #ffe019;
+    padding: 10px 20px 10px 20px;
+    text-decoration: none;
+  }
+  
+  .btn:hover {
+    background: #ffc619;
+    text-decoration: none;
+  }

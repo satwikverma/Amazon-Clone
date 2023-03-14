@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Your Addresses</title>
+    <link rel="stylesheet" href="css/f_styles.css">
+</head>
+<body>
+    <div class="form-container">
+        <p class="new-address-loc">
+            <span class="path">Your Account</span>
+            <span class="inside"> > </span>
+            <span class="path">Your Addresses</span>
+            <span class="inside"> > </span>
+            <span class="path-currentpage">New Address</span>
+        </p>   
+        <h2>Add new Address</h1>
+        <p style="font-size: 13px;">Or pick up your packages at your convenience from our self-service locations. To add an Amazon pickup point, <span style="color:darkcyan"> click here</span></p>
+        
+        <!-- Inputs form -->
+        <form>
+            <label for="country" class="input-box-name">Country/Region</label><br>
+            <select id="country" name="country" class="input-box-dropdown">
+                <option value="afghanistan">Afghanistan</option>
+                <option value="australia">Australia</option>
+                <option value="bangladesh">Bangladesh</option>
+                <option value="brazil">Brazil</option>
+                <option value="canada">Canada</option>
+                <option value="china">China</option>
+                <option value="egypt">Egypt</option>
+                <option value="france">France</option>
+                <option value="germany">Germany</option>
+                <option value="hong-kong">Hong Kong</option>
+                <option value="india" selected>India</option>
+                <option value="nepal">Nepal</option>
+                <option value="pakistan">Pakistan</option>
+                <option value="zimbabwe">Zimbabve</option>
+              </select>
+            <label for="fullname" class="input-box-name">Full Name</label><br>
+            <input type="text" id="fullname" name="fullname" class="input-box"><br>
+            <label for="phone" class="input-box-name">Mobile Number</label><br>
+            <input type="text" maxlength="10" id="phone" name="phone_number" class="input-box"><br>
+            <label for="pincode" class="input-box-name">Pincode</label><br>
+            <input type="text" maxlength="6" id="pincode" name="pincode" class="input-box" placeholder="6 digits [0-9] PIN Code"><br>
+            <label for="address_building" class="input-box-name">Flat, House no., Building, Company, Apartment</label><br>
+            <input type="text" id="address_building" name="address_building" class="input-box"><br>
+            <label for="address_street" class="input-box-name">Area, Street, Sector, Village</label><br>
+            <input type="text" id="address_street" name="address_street" class="input-box"><br>
+            <label for="landmark" class="input-box-name">Landmark</label><br>
+            <input type="text" id="landmark" name="landmark" class="input-box" placeholder="E.g. near apollo hospital"><br>
+            <div class="town" style="width: 48%;">
+                <label for="city" class="input-box-name">Town/City</label><br>
+                <input type="text" id="city" name="city" class="input-box"><br>
+            </div>
+            <div class="state" style="width: 50%;">
+                <label for="state" class="input-box-name">State</label><br>
+                <select id="state" name="state" class="input-box-dropdown">
+                    <option value="" disabled selected>Choose a state</option>
+                    <option value="chandigarh">Chandigarh</option>
+                    <option value="delhi">Delhi</option>
+                    <option value="haryana">Haryana</option>
+                    <option value="maharashtra">Maharashtra</option>
+                    <option value="punjab">Punjab</option>
+                    <option value="uttar_pradesh">Uttar Pradesh</option>
+                    <option value="uttarakhand">Uttarakhand</option>
+                </select>
+            </div>
+            
+            <input type="checkbox" id="make-default-address" name="make-default-address">
+            <label for="make-default-address" style="font-size: 14px;">Make this my default address</label>
+            <br>
+            <p style="margin: 20px 0 30px 0;"><a href="#" class="btn">Add Address</a></p>
+          </form>
+    </div>
+</body>
+</html>
