@@ -17,6 +17,58 @@
 </head>
 <body>
     <header>
+        <!-- Side nav bar -->
+        <div id="faded"></div>
+    <div class="sidenavbar" id="sidenav">
+        <div class="greet-customer">
+            <span>Hello, Satwik</span>
+            <button type="button" onclick="closeNav()">✖</button>
+        </div>
+
+        <div class="sidenav-content">
+            <ul>
+                <li class="heading">Trending</li>
+                <li>Best Sellers</li>
+                <li>New Releases</li>
+                <li>Movers and Shakers</li>
+            </ul>
+
+            <ul>
+                <li class="heading">Digital Content And Devices</li>
+                <li>Amazon miniTV- FREE entertainment</li>
+                <li>Echo & Alexa</li>
+                <li>Fire TV</li>
+                <li>Kindle E-Readers and eBooks</li>
+                <li>Audible AudioBooks</li>
+                <li>Amazon Prime Video</li>
+                <li>Amazon Prime Music</li>
+
+            </ul>
+
+            <ul>
+                <li class="heading">Shop By Category</li>
+                <li>Mobiles, Computers</li>
+                <li>TV, Appliances, Electronics</li>
+                <li>Men's Fashion</li>
+                <li>Women's Fashion</li>
+            </ul>
+
+            <ul>
+                <li class="heading">Programs & Features</li>
+                <li>Gift Cards and Mobile Recharges</li>
+                <li>Flight Tickets</li>
+                <li>Clearance Store</li>
+            </ul>
+
+            <ul>
+                <li class="heading">Help & Settings</li>
+                <li>Your Account</li>
+                <li>Customer Service</li>
+                <li>Sign Out</li>
+            </ul>
+        </div>
+    </div>
+        <!-- ===================== -->
         <div id="navbar">
             <div id="navbar-upper">
                 <div class="nav-left">
@@ -63,7 +115,7 @@
             </div>
             <div id="navbar-lower">
                 <div class="nav-left">
-                    <a id="nav-hamburger-menu" href="#">All</a>
+                    <a id="nav-hamburger-menu" href="#" onclick="openNav()">All</a>
                 </div>
                 <div class="nav-fill">
                     <div id="nav-shop-container">
@@ -89,7 +141,33 @@
 
     <main>
         <section class="section">
-            <img src="images/body-top/body-top-img-1.jpg" alt="" style="width: 100%">
+            <div class="one">
+                <div class="myBackground fade">
+                  <img src="images/body-top/body-top-img-1.jpg" alt="background_image">
+                </div>
+                <div class="myBackground fade">
+                  <img src="images/body-top/body-top-img-2.jpg" alt="background_image2">
+                </div>
+                <div class="myBackground fade">
+                  <img src="images/body-top/body-top-img-3.jpg" alt="background_image3">
+                </div>
+                <div class="myBackground fade">
+                    <img src="images/body-top/body-top-img-4.jpg" alt="background_image3">
+                </div>
+                <div class="myBackground fade">
+                    <img src="images/body-top/body-top-img-5.jpg" alt="background_image3">
+                </div>
+                <div class="myBackground fade">
+                    <img src="images/body-top/body-top-img-6.jpg" alt="background_image3">
+                </div>
+                <div class="myBackground fade">
+                    <img src="images/body-top/body-top-img-7.jpg" alt="background_image3">
+                </div>
+              
+                <a class="prev" onclick="plusBack(-1)">&#10094;</a>
+                <a class="next" onclick="plusBack(1)">&#10095;</a>
+    
+            </div>
         </section>
 
         <!-- Pehli Row -->
@@ -296,7 +374,7 @@
 
     <footer>
         <div class="foot-container">
-            <a href="#">
+            <a href="#" onclick="backToTop()">
                 <div class="back-to-top">
                     <span>Back to top</span>
                 </div>
@@ -430,5 +508,6 @@
         </div>
     </footer>
     <!-- End of footer -->
+    <script src="navlieft.js"></script>
 </body>
 </html>
